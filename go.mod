@@ -16,3 +16,5 @@ require (
 	github.com/urfave/cli v1.22.2
 	golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
 )
+
+replace github.com/opencontainers/runtime-spec => github.com/wt-l00/runtime-spec v1.0.5

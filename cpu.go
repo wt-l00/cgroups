@@ -74,6 +74,10 @@ func (c *cpuController) Create(path string, resources *specs.LinuxResources) err
 				name:   "cfs_quota_us",
 				ivalue: cpu.Quota,
 			},
+			{
+				name:   "cfs_borrowing_us",
+				ivalue: cpu.Borrowing,
+			},
 		} {
 			var value []byte
 			if t.uvalue != nil {
